@@ -1,3 +1,11 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+countrySelection:
+    path: /country
+    controller: App\Controller\CountryController::getCountry
+
+temperatureForOneCountry:
+    path: /temperature/{countryId}
+    controller: App\Controller\TemperatureController::getTemperatureForOneCountry
+
+TweetForOneCountry:
+    path: /tweet/{countryId}
+    controller: App\Controller\TweetController::getTweetForOneCountry
